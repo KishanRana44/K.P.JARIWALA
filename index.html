@@ -1,384 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K.P.JARIWALA-Traditional Jari Business</title>
-    <style>
-        /* General Styles */
-        body 
-        {
-            font-family: 'Arial',sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>K.P.JARIWALA - Traditional Jari Business</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdf7ef;
+      color: #333;
+    }
 
-        
-        h1,h2,h3{
-            font-family: 'Georgia', serif;
-            color: #b8860b; /* Gold color for headings */
-        }
+    h1, h2, h3 {
+      color: #c79810;
+    }
 
-        
-        a {
-            text-decoration: none;
-            color: #b8860b;
-        }
+    a {
+      text-decoration: none;
+    }
 
-        a:hover {
-            color: #8b6914;
-        }
+    a:hover {
+      color: goldenrod;
+    }
 
-        /* Header */
-        header {
-            background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
-            color: white;
-            padding: 50px 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
+    header {
+      background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+      color: ivory;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
 
-        header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4);
-            z-index: 1;
-        }
-        .header-text
-        {
-            text-align: center;
-        }
-        .header-content {
-            display: flex;
-            align-items: center;
-            gap: 40px;
-            position: relative;
-            z-index: 2;
-            max-width: 800px; /* Medium width */
-            width: 100%;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-            border-radius: 10px;
-        }
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(25, 47, 89, 0.7);
+      z-index: 1;
+    }
 
-        .header-content img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid #b8860b;
-            object-fit: cover;
-        }
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      width: 100%;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      border: 2px solid goldenrod;
+    }
 
-        .header-text {
-            flex: 1;
-        }
+    .header-content img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid darkgoldenrod;
+      object-fit: cover;
+    }
 
-        .header-text h1 {
-            font-size: 3rem;
-            margin: 0;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-            animation: fadeIn 2s ease-in-out;
-        }
+    .header-text {
+      flex: 1;
+      text-align: center;
+    }
 
-        .header-text p {
-            font-size: 1.5rem;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-            animation: fadeIn 3s ease-in-out;
-        }
+    .header-text h1 {
+      color: black;
+      font-size: 3rem;
+      margin: 0;
+      animation: fadeIn 2s ease-in-out;
+    }
 
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
+    .header-text p {
+      font-size: 10pt;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 2s ease-in-out;
+    }
 
-        /* Navigation */
-        nav {
-            background: rgba(0, 0, 0, 0.8);
-            padding: 10px 20px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            font-size: 1.1rem;
-            transition: color 0.3s ease;
-        }
+    nav {
+      background: #192f59;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
 
-        nav a:hover {
-            color: #b8860b;
-        }
+    nav a {
+      color: #f0e68c;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
 
-        /* Sections */
-        section {
-            padding: 50px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 1s ease, transform 1s ease;
-        }
+    nav a:hover {
+      color: #ffd700;
+    }
 
-        section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
 
-        .about, .services, .contact, .mission-vision, .owner-message {
-            background: white;
-            margin: 20px 0;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
-        .owner-message {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
+    .about, .services, .contact, .mission-vision, .owner-message {
+      background: white;
+      margin: 20px 0;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-        .owner-message img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #b8860b;
-        }
+    .owner-message {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
 
-        .owner-message div {
-            flex: 1;
-        }
+    .owner-message img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #b8860b;
+    }
 
-        .contact-details {
-            margin-top: 10px;
-        }
+    .owner-message div {
+      flex: 1;
+    }
 
-        .contact-details p {
-            margin: 10px 0;
-        }
+    .contact-details p {
+      margin: 10px 0;
+    }
 
-        .address {
-            margin-top: 10px;
-            /*font-style: italic;
-            color: #666;*/
-        }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
 
-        /* Products Gallery */
-        .products {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
+    .product-card {
+      background: #fff8dc;
+      border: 1px solid #ccc;
+      border-radius: 30px;
+      overflow: hidden;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-        .product-card {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            overflow: hidden;
-            width: 300px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    .product-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(205, 133, 63, 0.3);
+    }
 
-        .product-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        }
+    .product-card img {
+      width: 50%;
+      border-radius: 20px;
+      margin: 20px;
+      height: 250px;
+      object-fit: cover;
+    }
 
-        .product-card img {
-            width: 50%;
-            margin: 20px;
-            height: 200px;
-            object-fit: cover;
-        }
+    .product-card h3 {
+      margin: 15px 0;
+    }
 
-        .product-card h3 {
-            margin: 15px 0;
-        }
+    .product-card p {
+      padding: 0 15px 15px;
+      color: #666;
+    }
 
-        .product-card p {
-            padding: 0 15px 15px;
-            color: #666;
-        }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
 
-        /* Contact Form */
-        .contact form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
+    .contact input, .contact textarea {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
 
-        .contact input, .contact textarea {
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
+    .contact button {
+      background: #c79810;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
+    }
 
-        .contact button {
-            background: #b8860b;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1.1rem;
-            transition: background 0.3s ease;
-        }
+    .contact button:hover {
+      background: #a07106;
+    }
 
-        .contact button:hover {
-            background: #8b6914;
-        }
+    footer {
+      background: #1c1c1c;
+      color: #dcdcdc;
+      text-align: center;
+      padding: 10px;
+      margin-top: 10px;
+    }
 
-        /* Footer */
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 50px;
-        }
+    footer a {
+      color: black;
+    }
 
-        footer a {
-            color: #b8860b;
-        }
+    footer a:hover {
+      color: white;
+    }
 
-        footer a:hover {
-            color: #8b6914;
-        }
-    </style>
+    footer a:visited {
+      color: black;
+    }
+
+    /* Responsive Design for Mobile */
+    @media screen and (max-width: 600px) {
+      header {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+      }
+
+      .header-content {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .header-content img {
+        width: 150px;
+        height: 150px;
+      }
+
+      .header-text h1 {
+        font-size: 3rem;
+        color: black;
+      }
+
+      .header-text p {
+        font-size: 0.9rem;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .product-card {
+        width: 90%;
+      }
+
+      .owner-message {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .owner-message img {
+        width: 100px;
+        height: 100px;
+      }
+
+      section {
+        padding: 30px 10px;
+      }
+
+      .contact form input,
+      .contact form textarea {
+        font-size: 0.95rem;
+      }
+
+      .contact button {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <div class="header-content">
+      <img src="KPJ.png" alt="K.P. Jariwala Logo" />
+      <div class="header-text">
+        <h1>K.P.JARIWALA</h1>
+        <p>Traditional Metallic Threads for Exquisite Embroidery</p>
+      </div>
+    </div>
+  </header>
 
-    <!-- Header -->
-    <header>
-        <div class="header-content">
-            <img src="krishna.png" alt="K.P. Jariwala Logo">
-            <div class="header-text">
-                <h1>K.P.JARIWALA</h1>
-                <p>Traditional Metallic Threads for Exquisite Embroidery</p>
-            </div>
-        </div>
-    </header>
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#products">Products</a>
+    <a href="#services">Services</a>
+    <a href="#mission-vision">Mission & Vision</a>
+    <a href="#owner-message">Owner's Message</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#about">About Us</a>
-        <a href="#products">Products</a>
-        <a href="#services">Services</a>
-        <a href="#mission-vision">Mission & Vision</a>
-        <a href="#owner-message">Owner's Message</a>
-        <a href="#contact">Contact Us</a>
-    </nav>
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>K.P. Jariwala is a family-owned business specializing in high-quality jari threads for traditional and modern embroidery. With decades of experience, we bring the richness of Indian craftsmanship to your designs.</p>
+  </section>
 
-    <!-- About Us -->
-    <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>K.P. Jariwala is a family-owned business specializing in high-quality jari threads for traditional and modern embroidery. With decades of experience, we bring the richness of Indian craftsmanship to your designs.</p>
-    </section>
+  <section id="products" class="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="silver.jpeg" alt="Jari Thread" />
+        <h3>German Silver Jari Thread</h3>
+        <p>High-quality silver thread for elegant designs.</p>
+      </div>
+      <div class="product-card">
+        <img src="imgsilver.jpg" alt="Jari Thread" />
+        <h3>Imitation Jari Thread</h3>
+        <p>Vibrant colored threads for modern embroidery.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Products -->
-    <section id="products" class="products">
-        <h2>Our Products</h2>
-        <div class="products">
-           
-            <div class="product-card">
-                <img src="C:\K.P.JARIWALA\silver.jpeg" alt="Jari Thread">
-                <h3>German Silver Jari Thread</h3>
-                <p>High-quality silver thread for elegant designs.</p>
-            </div>
-            <div class="product-card">
-                <img src="C:\K.P.JARIWALA\imgsilver.jpg" alt="Jari Thread">
-                <h3>Imitation Jari Thread</h3>
-                <p>Vibrant colored threads for modern embroidery.</p>
-            </div>
-        </div>
-    </section>
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <p>We offer custom embroidery services, bulk orders and consultations for designers. Let us help you bring your creative visions to life.</p>
+  </section>
 
-    <!-- Services -->
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <p>We offer custom embroidery services,bulk orders and consultations for designers.Let us help you bring your creative visions to life.</p>
-    </section>
+  <section id="mission-vision" class="mission-vision">
+    <h2>Mission & Vision</h2>
+    <p><strong>Mission:</strong> To preserve and promote the art of traditional embroidery by providing the finest quality jari threads to artisans and designers worldwide.</p>
+    <p><strong>Vision:</strong> To become the global leader in jari craftsmanship, blending tradition with innovation to create timeless designs.</p>
+  </section>
 
-    <!-- Mission & Vision -->
-    <section id="mission-vision" class="mission-vision">
-        <h2>Mission & Vision</h2>
-        <p><strong>Mission:</strong> To preserve and promote the art of traditional embroidery by providing the finest quality jari threads to artisans and designers worldwide.</p>
-        <p><strong>Vision:</strong> To become the global leader in jari craftsmanship, blending tradition with innovation to create timeless designs.</p>
-    </section>
+  <section id="owner-message" class="owner-message">
+    <img src="FB_IMG_1741844947343.jpg" alt="Owner Photo" />
+    <div>
+      <h2>Owner's Message</h2>
+      <p>"At K.P.Jariwala, we are passionate about preserving the rich heritage of Indian embroidery. Our commitment to quality and craftsmanship ensures that every thread we produce tells a story of tradition and excellence."</p>
+      <p><strong>- Mr. Pravinkumar D. Rana</strong></p>
+    </div>
+  </section>
 
-    <!-- Owner's Message -->
-    <section id="owner-message" class="owner-message">
-        <img src="C:\K.P.JARIWALA\FB_IMG_1741844947343.jpg" alt="Owner Photo">
-        <div>
-            <h2>Owner's Message</h2>
-            <p>"At K.P.Jariwala,we are passionate about preserving the rich heritage of Indian embroidery.Our commitment to quality and craftsmanship ensures that every thread we produce tells a story of tradition and excellence."</p>
-            <p><strong>- Mr.Pravinkumar D. Rana</strong></p>
-        </div>
-    </section>
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-details">
+      <p><strong>Mobile:</strong> +91 99259 20350, +91 97261 25651</p>
+      <p><strong>Email:</strong> pkjariwala24@gmail.com</p>
+      <div class="address">
+        <p><strong>Address:</strong></p>
+        <p>9/668, SIDHHMATA NI SHERI, WADIFALIYA, SURAT, GUJARAT - 395003</p>
+      </div>
+    </div>
+     <!-- Google Map Embed -->
+<div style="margin-top: 30px;">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29756.778900938396!2d72.79130657979347!3d21.208148010573673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f7b64c33df7%3A0x873b96d4d9ac3766!2sK.P.JARIWALA!5e0!3m2!1sen!2sin!4v1753971220248!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 
-    <!-- Contact Us -->
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <div class="contact-details">
-            <p><strong>Mobile:</strong>+91 99259 20350,+91 97261 25651</p>
-            <p><strong>Email:</strong>pkjariwala24@gmail.com</p>
-            <div class="address">
-                <p><strong>Address:</strong></p>
-                <p>9/668,SIDHHMATA NI SHERI,WADIFALIYA,SURAT,GUJARAT-395003</p>
-            </div>
-        </div>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+  </iframe>
+  <br><br>
+</div>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 <strong>K.P.JARIWALA</strong>. All rights reserved. | <a href="#">Privacy Policy</a></p>
-    </footer>
+  <footer>
+  <p>&copy; 2025 <strong>K.P.JARIWALA</strong> | All rights reserved. <a href="#">Privacy Policy</a></p>
+</footer>
 
-    <!-- Animation Script -->
-    <script>
-        const sections = document.querySelectorAll('section');
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.1 });
+  <script>
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
 
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
-
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
 </body>
 </html>
